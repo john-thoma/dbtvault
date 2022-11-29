@@ -144,3 +144,7 @@
     {#- DO NOT QUOTE FOR NOW. Postgres has a "feature" which froces explicit casing and breaks the SQL-92 standard -#}
     {%- do return (('', '')) -%}
 {%- endmacro %}
+
+{%- macro spark__get_escape_characters() %}
+    {%- do return (('`', '`')) -%}
+{%- endmacro %}
